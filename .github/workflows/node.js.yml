@@ -31,6 +31,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+      - name: Checks (corpus + engine tests)
+        run: npm run check
+
       - name: Build
         run: npm run build
 
